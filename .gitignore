@@ -1,4 +1,12 @@
-/config
-/controllers
-/models
-/routes
+node_modules/
+
+# --- Log Error ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# --- File Sistem Operasi (Sampah) ---
+.DS_Store
+Thumbs.db
