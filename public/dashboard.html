@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body { font-family: sans-serif; padding: 30px; }
+        .header { display: flex; justify-content: space-between; align-items: center; }
+        button.logout { background: red; color: white; border: none; padding: 10px; cursor: pointer; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #333; color: white; }
+        .status-valid { color: green; font-weight: bold; }
+        .status-invalid { color: red; font-weight: bold; }
+        input.edit-input { padding: 5px; width: 200px; }
+        button.btn-edit { background: orange; border: none; padding: 5px 10px; cursor: pointer; color: white; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Admin Dashboard - User API Keys</h2>
+        <button class="logout" onclick="logout()">Logout</button>
+    </div>
+
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Created Timestamp</th>
+                <th>Status (30 Days)</th>
+                <th>API Key Value</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            </tbody>
+    </table>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
